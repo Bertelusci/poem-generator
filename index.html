@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>AI Poem Generator</title>
     <link rel="stylesheet" href="src/style.css" class="css">
 
@@ -13,24 +14,17 @@
 <body>
     <div class="container">
         <header>
-            <h1>Welcome to the poem generator! 🌸</h1>
+            <h1>AI Poem generator 🌸</h1>
         </header>
         <main>
             <form id="poem-generator-form">
                 <input type="text" placeholder="Enter the topic of the poem" autofocus required autocomplete="off"
-                    class="instructions" />
+                    class="instructions" id="user-instructions" />
                 <input type="Submit" class="submit-button" />
 
 
             </form>
             <div class="poem" id="poem">
-                When you are old and grey and full of sleep,
-                <br />
-                And nodding by the fire, take down this book,
-                <br />
-                And slowly read, and dream of the soft look
-                <br />
-                Your eyes had once, and of their shadows deep;
             </div>
         </main>
         <footer>This AI project was coded by <a href="https://github.com/Bertelusci" target="_blank">Ana Bertelo</a> and
