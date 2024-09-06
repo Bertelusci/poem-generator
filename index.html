@@ -13,18 +13,23 @@
 
 <body>
     <div class="container">
+
         <header>
             <h1>AI Poem generator 🌸</h1>
         </header>
         <main>
-            <form id="poem-generator-form">
-                <input type="text" placeholder="Enter the topic of the poem" autofocus required autocomplete="off"
-                    class="instructions" id="user-instructions" />
-                <input type="Submit" class="submit-button" />
+            <div class="form-container">
+                <form id="poem-generator-form">
+                    <input type="text" placeholder="Enter the topic of the poem you'd like to generate" autofocus
+                        required autocomplete="off" class="instructions" id="user-instructions" />
+                    <input type="submit" class="submit-button" />
 
+                </form>
 
-            </form>
-            <div class="poem" id="poem">
+                <small class="hint">i.e: Flower, Cheese, or Love</small>
+            </div>
+
+            <div class="poem hidden blink" id="poem">
             </div>
         </main>
         <footer>This AI project was coded by <a href="https://github.com/Bertelusci" target="_blank">Ana Bertelo</a> and
@@ -33,6 +38,7 @@
             <a href="https://generating-poems.netlify.app/" target="_blank">hosted on Netlify</a>
         </footer>
     </div>
+
     <script src="src/index.js"></script>
 </body>
 
